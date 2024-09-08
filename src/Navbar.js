@@ -9,7 +9,7 @@ const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Asegura que el ancho del navbar ocupe todo el contenedor */
+  width: max;
 `;
 
 const NavLinks = styled.div`
