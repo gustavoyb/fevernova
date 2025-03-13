@@ -1,7 +1,15 @@
+// src/Fechas.jsx
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const Container = styled.div`
+const pageVariants = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.10 } },
+  exit: { opacity: 0, y: -20, transition: { duration: 0.3 } }
+};
+
+const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,9 +102,13 @@ const ExternalLink = styled.a`
 
 const Fechas = () => {
   return (
-    <Container>
+    <Container variants={pageVariants} initial="initial" animate="animate" exit="exit">
       <Content>
-        <AlbumCover src="https://i.ibb.co/dMRrtk3/Captura-desde-2024-09-08-20-18-02.png" alt="Album Cover" />
+        <AlbumCover
+          src="https://i.ibb.co/dMRrtk3/Captura-desde-2024-09-08-20-18-02.png"
+          alt="Album Cover"
+          loading='lazy'
+        />
         <TextContainer>
           <Title>viernes 20 de septiembre de 2024</Title>
           <Subtitle>batacazo cultural, medrano 627, caba</Subtitle>
@@ -126,7 +138,6 @@ const Fechas = () => {
                   tickets
                 </ExternalLink>
               </TableCell>
-
             </TableRow>
           </tbody>
         </Table>

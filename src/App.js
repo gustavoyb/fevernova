@@ -1,21 +1,28 @@
-// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importa BrowserRouter, Routes y Route
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Navbar from './Navbar';
 import Inicio from './Inicio';
 import Fechas from './Fechas';
-// Importa otros componentes si los tienes
+
+const AnimatedRoutes = () => {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/fechas" element={<Fechas />} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
 
 function App() {
   return (
-    <Router> {/* Envuelve tu aplicación con BrowserRouter */}
-      <Navbar /> {/* El Navbar estará siempre visible */}
-      <Routes>
-        {/* Define las rutas para tus componentes */}
-        <Route path="/" element={<Inicio />} /> {/* Ruta para la pantalla de Inicio */}
-        <Route path="/fechas" element={<Fechas />} /> {/* Ruta para la pantalla de Fechas */}
-        {/* Agrega más rutas según tus necesidades, como "/videos" o "/fotos" */}
-      </Routes>
+    <Router>
+      <Navbar />
+      <AnimatedRoutes />
     </Router>
   );
 }
