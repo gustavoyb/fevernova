@@ -44,13 +44,12 @@ function Navbar() {
   return (
     <NavbarContainer>
       <NavLinks>
-        {/* Usa Link para navegar entre pantallas */}
-        <NavLink to="/">inicio</NavLink>
-        <NavLink to="/fechas">fechas</NavLink>
-        <NavLink to="/videos">videos</NavLink>
-        <NavLink to="/fotos">fotos</NavLink>
+        <NavLink to="/">INICIO</NavLink>
+        <NavLink to="/fechas">FECHAS</NavLink>
+        <NavLink to="/videos">VIDEOS</NavLink>
+        <NavLink to="/fotos">FOTOS</NavLink>
       </NavLinks>
-      <Title>fevernova</Title>
+      <Title>FEVERNOVA</Title>
       <SocialIcons>
         <SocialIconLink href="https://spotify.com" target="_blank" rel="noopener noreferrer">
           <FaSpotify />

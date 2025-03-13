@@ -55,7 +55,7 @@ const ButtonGroup = styled.div`
 `;
 
 const Button = styled.button`
-  font-family: 'Baskervville SC', serif;
+  font-family: 'Cormorant Garamond', serif;
   padding: 10px 20px;
   border: 2px solid black;
   background-color: transparent;
@@ -77,12 +77,12 @@ const Inicio = () => {
           loading='lazy'
         />
         <TextContainer>
-          <Title>fevernova</Title>
-          <Subtitle>el primer ep ya está disponible</Subtitle>
+          <Title>FEVERNOVA</Title>
+          <Subtitle>El primer EP ya está disponible</Subtitle>
           <ButtonGroup>
-            <Button>bandcamp</Button>
-            <Button>spotify</Button>
-            <Button>youtube</Button>
+            <Button>Bandcamp</Button>
+            <Button>Spotify</Button>
+            <Button>Youtube</Button>
           </ButtonGroup>
         </TextContainer>
       </Content>

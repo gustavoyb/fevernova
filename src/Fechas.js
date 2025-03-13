@@ -42,22 +42,22 @@ const Title = styled.h1`
   font-size: 2rem;
   color: black;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1;
 `;
 
 const Subtitle = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0;
   line-height: 1.2;
   color: black;
 `;
 
 const Button = styled.button`
-  font-family: 'Baskervville SC', serif;
+  font-family: 'Cormorant Garamond', serif;
   padding: 10px 20px;
   border: 2px solid black;
   background-color: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   margin-top: 15px;
   &:hover {
@@ -110,10 +110,10 @@ const Fechas = () => {
           loading='lazy'
         />
         <TextContainer>
-          <Title>viernes 20 de septiembre de 2024</Title>
-          <Subtitle>batacazo cultural, medrano 627, caba</Subtitle>
-          <Subtitle>tocamos con planes para una fuga, boureal y bidones auxiliares</Subtitle>
-          <Button>entradas</Button>
+          <Title>Viernes 20 de septiembre de 2024</Title>
+          <Subtitle>Batacazo Cultural, Medrano 627, CABA</Subtitle>
+          <Subtitle>Tocamos con Planes para una fuga, Boureal y Bidones auxiliares</Subtitle>
+          <Button>ENTRADAS</Button>
         </TextContainer>
       </Content>
 

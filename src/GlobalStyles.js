@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
-
   * {
     margin: 0;
     padding: 0;
@@ -11,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     background-color: #faf9f6;
-    font-family: 'Baskervville SC', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
