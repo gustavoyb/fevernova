@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from './Navbar';
 import Inicio from './Inicio';
 import Fechas from './Fechas';
+import { GlobalStyles } from './GlobalStyles';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -21,6 +22,7 @@ const AnimatedRoutes = () => {
 function App() {
   return (
     <Router>
+      <GlobalStyles/>
       <Navbar />
       <AnimatedRoutes />
     </Router>
